@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"your-module-name/models"
+	"expense-tracker/models"
 )
 
 const fileName = "expenses.json"

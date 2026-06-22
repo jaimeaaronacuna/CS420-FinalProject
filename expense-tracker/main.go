@@ -103,6 +103,13 @@ func main() {
 			fmt.Println("Unknown budget command")
 		}
 
+	case "monthly":
+
+		err := commands.Monthly()
+		if err != nil {
+			fmt.Println("Error:", err)
+		}
+
 	default:
 		fmt.Println("Unknown command")
 		printUsage()
@@ -119,4 +126,5 @@ func printUsage() {
 	fmt.Println("  search <category>")
 	fmt.Println("  budget set <amount>")
 	fmt.Println("  budget status")
+	fmt.Println("  monthly")
 }
